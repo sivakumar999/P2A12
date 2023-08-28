@@ -40,7 +40,7 @@ namespace Assign12.Controllers
         // GET: Comments/Create
         public ActionResult Create()
         {
-            ViewBag.PostId = new SelectList(db.Posts, "Id", "Title");
+            ViewBag.PostId = new SelectList(db.Posts, "Id", "Id");
             return View();
         }
 
